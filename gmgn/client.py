@@ -68,8 +68,8 @@ class gmgn:
         """
         self.randomiseRequest()
         if not limit:
-            limit = 50
-        elif limit > 50:
+            limit = 5000
+        elif limit > 5000:
             return "You cannot have more than check more than 50 pairs."
         
         url = f"{self.BASE_URL}/v1/pairs/sol/new_pairs?limit={limit}&orderby=open_timestamp&direction=desc&filters[]=not_honeypot"
